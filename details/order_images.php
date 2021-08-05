@@ -1,4 +1,4 @@
-    <?php
+<!--     <?php
     $image1=mysqli_query($conn,"SELECT *  from order_images WHERE order_id='$order_id' AND position='1'");
     $fetch_image1=mysqli_fetch_array($image1);
     $image_1=$fetch_image1['order_image'];
@@ -23,4 +23,4 @@
     $fetch_image6=mysqli_fetch_array($image6);
     $image_6=$fetch_image6['order_image'];
     $data6=$fetch_image6['image_data'];
-     ?> 
+     ?>  -->
