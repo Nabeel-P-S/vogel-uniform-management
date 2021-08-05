@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 04, 2021 at 06:39 PM
+-- Generation Time: Aug 05, 2021 at 09:35 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.14
 
@@ -141,9 +141,9 @@ INSERT INTO `customers` (`customer_id`, `shop_name`, `customer_name`, `customer_
 (5, 'BLUE MENS FASHION', 'ARAVIND', 'profile.png', 'SREE KRISHNA SHOPING COMPLEX,NEAR HP PETROL PUMP', 'THAIKKAD JN', '680104', 'THRISSUR', '', '', 'ARVINNDALUKKAL@YAHOO.COM', '7025092615', '9846441174', '918089087299', '21/8/19', 1),
 (6, 'BIG BRO', 'SUJITH', 'profile.png', 'KBM BUILDING PO THAIKKAD', 'CHOVALLUR PADI', '680104', 'THRISSUR', '', '', 'SIJITHCB9@GMAIL.COM', '7012303706', '9037555637', '981565848616', '', 1),
 (7, 'ROYAL FABRICS', 'GEETHA', 'profile.png', 'PANCHAYATH SHOPPING COMPLEX,PO PUZHAKKAL', 'MUTHUVARA', '680553', 'THRISSUR', '', '', '', '7736808849', '9742907799', '838734582469', '48/2019 20', 1),
-(8, 'TRENDY', 'SANTHOSH GOPALAN', 'profile.png', 'SCHOOL ROAD,PO PERAMANGALAM', 'PERAMANGALAM', '680545', 'THRISSUR', '', '', 'SANTHOSH.GOPALAN@HOTMAIL.COM', '9495462326', '', '787720856076', '', 1),
-(9, 'RACE BAND', 'SHAFEEQ', 'profile.png', 'NEAR GOVT HOSPITAL,OPP SALAFI MASJID,MAIN ROAD OTTUPARA', 'OTTUPARA', '680509', 'THRISSUR', '', '', '', '9847375717', '04884231171', '', '', 1),
-(10, 'TRENDZ MENS WEAR', 'SIVAN TS', 'profile.png', 'NRAR NEHRU MANDAPAM', 'MUNDUR', '680541', 'THRISSUR', '', '', '', '9645890808', '', '784195646771', 'B3-140(146)2019-20-..479', 1);
+(8, 'TRENDY', 'SANTHOSH GOPALAN', 'profile.png', 'SCHOOL ROAD,PO PERAMANGALAM', 'PERAMANGALAM', '680545', 'THRISSUR', '', '', 'SANTHOSH.GOPALAN@HOTMAIL.COM', '7736656211', '5', '787720856076', '5', 1),
+(9, 'RACE BAND', 'SHAFEEQ', 'profile.png', 'NEAR GOVT HOSPITAL,OPP SALAFI MASJID,MAIN ROAD OTTUPARA', 'OTTUPARA', '680509', 'THRISSUR', '', '', '', '7736656211', '04884231171', '5', '5', 1),
+(10, 'TRENDZ MENS WEAR', 'SIVAN TS', 'profile.png', 'NRAR NEHRU MANDAPAM', 'MUNDUR', '680541', 'THRISSUR', '', '', '', '7736656211', '', '784195646771', 'B3-140(146)2019-20-..479', 1);
 
 -- --------------------------------------------------------
 
@@ -511,8 +511,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `created_at`, `status`) VALUES
-(1, 'shybi', '$2y$10$N5pgXy2DtqvPrFxfTedLiecm96ZGZCkWlAWExHi2qJyGKqfqMVfL.', '2019-11-01 18:40:28', 0),
-(2, 'staff', '$2y$10$ZXB86FEoLfe.UD.Nf9GvquRksfa4zOqZDW41KF3oUYLIbQqu47eSq', '2019-12-03 12:33:53', 0);
+(1, 'user', '$2y$10$rKjNefPxetSgJmwfs2D23uyfWOA5uh1fQGmmPnpWeOT8RIGVtOgcu', '2019-11-01 18:40:28', 0),
+(2, 'staff', '$2y$10$ZXB86FEoLfe.UD.Nf9GvquRksfa4zOqZDW41KF3oUYLIbQqu47eSq', '2019-12-03 12:33:53', 0),
+(3, 'admin', '$2y$10$rKjNefPxetSgJmwfs2D23uyfWOA5uh1fQGmmPnpWeOT8RIGVtOgcu', '2021-08-05 12:52:59', 0);
 
 -- --------------------------------------------------------
 
@@ -746,7 +747,7 @@ ALTER TABLE `sizes`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `vendors`

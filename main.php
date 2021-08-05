@@ -126,15 +126,15 @@ div.required-field label::after {
 <!--     <img src="images/search1.png" style="text-align: left;" onclick="search_order();">
  --><i class="glyphicon glyphicon-search w3-hover-white 3-button" style="margin-left: 2vw;font-size: 1.5vw;" onclick="search_order();" ></i>
     <a style="padding-left: 3vw;" href="logout.php"  ><b style="color: yellow;"><?php echo $user_name;?></b> &nbsp;  LogOut  </a> </div>  
- <div class="w3-container" style="display: <?php if ($user_name=="shybi") echo "none"; else echo "block"; ?> ;">
+ <div class="w3-container" style="display: <?php if ($user_name=="user") echo "none"; else echo "block"; ?> ;">
   <a><h3 ><b><img src="images/vogel1.jpg" style="width: 143px;height: 140px;"></b></h3></a>
 
 </div>
-<div style="display: <?php if ($user_name=="shybi") echo "none"; else echo "block"; ?>; ">
+<div style="display: <?php if ($user_name=="user") echo "none"; else echo "block"; ?>; ">
  <a href="#" onclick="my_function('1','1')" class="w3-bar-item w3-button w3-hover-white">Create Item</a> 
  <a href="#" onclick="my_function('2','1')" class="w3-bar-item w3-button w3-hover-white">View Item</a> 
 </div>
-<div style="display: <?php if ($user_name=="shybi") echo "block"; else echo "none"; ?>; ">
+<div style="display: <?php if ($user_name=="user") echo "block"; else echo "none"; ?>; ">
    <!--  <a  onclick="search_order();"  class="w3-bar-item w3-button w3-hover-white">Search</a>  -->
 
 <div style="*background-color: rgb(63, 14, 81,0.4);*border: 1px solid"> 
@@ -417,7 +417,7 @@ div.required-field label::after {
  }
 </script>
 <script>
-  window.onload=<?php  if ($user_name=="shybi") echo "my_function('2','6')"; else echo "my_function(1,1)"; ?>;
+  window.onload=<?php  if ($user_name=="user") echo "my_function('2','6')"; else echo "my_function(1,1)"; ?>;
  
 </script>
 

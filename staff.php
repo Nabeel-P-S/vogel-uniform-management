@@ -112,17 +112,17 @@ div.required-field label::after {
   <div class="row" id="full_div" style="padding: 0vw;">
 
 
-    <div class="col-md-2" style="border: 1px solid;background-color: <?php if ($user_name=="shybi") echo "#3F0E40"; else echo "#03384a"; ?> ;color: white;height: 100vh;">
+    <div class="col-md-2" style="border: 1px solid;background-color: <?php if ($user_name=="admin") echo "#3F0E40"; else echo "#03384a"; ?> ;color: white;height: 100vh;">
       <nav id="mySidebar"><br>
  
 
 <div class="w3-bar-block">
  <label style="color: yellow;padding-left: 1vw;">WELCOME &nbsp; <?php echo $user_name; ?></label>
- <div class="w3-container" style="display: <?php if ($user_name=="shybi") echo "none"; else echo "block"; ?> ;">
+ <div class="w3-container" style="display: <?php if ($user_name=="admin") echo "none"; else echo "block"; ?> ;">
   <a><h3 ><b><img src="images/vogel1.jpg" style="width: 143px;height: 140px;"></b></h3></a>
 
 </div>
-<div style="display: <?php if ($user_name=="shybi") echo "none"; else echo "block"; ?>; ">
+<div style="display: <?php if ($user_name=="admin") echo "none"; else echo "block"; ?>; ">
  <a href="#" onclick="my_function('1','1')" class="w3-bar-item w3-button w3-hover-white">Create Item</a> 
  <a href="#" onclick="my_function('2','1')" class="w3-bar-item w3-button w3-hover-white">View Item</a> 
 </div>
@@ -372,7 +372,7 @@ div.required-field label::after {
  }
 </script>
 <script>
-  window.onload=<?php  if ($user_name=="shybi") echo "my_function('2','6')"; else echo "my_function(1,1)"; ?>;
+  window.onload=<?php  if ($user_name=="admin") echo "my_function('2','6')"; else echo "my_function(1,1)"; ?>;
  
 </script>
 
